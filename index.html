@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Hanskiy Dvor — искусство вкуса и гостеприимства.">
+  <title>Hanskiy Dvor — Искусство вкуса</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-brand">H<span>D</span></div>
+    <div class="loader-line"><span></span></div>
+    <p>ИСКУССТВО ГОСТЕПРИИМСТВА</p>
+  </div>
+
+  <div class="site-shell">
+    <div class="announcement">
+      <span>HANSKIY DVOR</span>
+      <span>ДЕМО-КОНЦЕПТ · РЕСТОРАННАЯ КУЛЬТУРА</span>
+      <span>EST. 2024</span>
+    </div>
+
+    <header class="header">
+      <a class="brand" href="#home" aria-label="Hanskiy Dvor — главная">
+        <span class="brand-symbol">H<span>D</span></span>
+        <span class="brand-name">HANSKIY<br>DVOR</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Навигация">
+        <a href="#philosophy">Философия</a>
+        <a href="#menu">Меню</a>
+        <a href="#locations">Рестораны</a>
+      </nav>
+
+      <a class="header-cta magnetic" href="#menu">
+        <span>Открыть меню</span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <a href="#philosophy">Философия <span>01</span></a>
+      <a href="#menu">Меню <span>02</span></a>
+      <a href="#locations">Рестораны <span>03</span></a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow reveal">
+            <span class="eyebrow-line"></span>
+            БОЛЬШЕ, ЧЕМ РЕСТОРАН
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line"><span>Искусство</span></span>
+            <span class="title-line"><span>быть <i>вместе.</i></span></span>
+          </h1>
+
+          <div class="hero-bottom reveal">
+            <p>
+              Место, где вкус становится впечатлением,
+              а обычный вечер — историей, которую хочется повторить.
+            </p>
+            <a href="#philosophy" class="discover-link">
+              <span class="discover-icon">↓</span>
+              <span>ОТКРЫТЬ ИСТОРИЮ</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=85"
+              alt="Изысканное мясное блюдо в ресторанной подаче"
+              fetchpriority="high"
+            >
+            <div class="image-shade"></div>
+            <div class="image-caption">
+              <span>01 / ВПЕЧАТЛЕНИЕ</span>
+              <span>ВКУС В ДЕТАЛЯХ</span>
+            </div>
+          </div>
+
+          <div class="hero-stamp">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <path id="circle-text" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0"/>
+              </defs>
+              <text>
+                <textPath href="#circle-text">HOSPITALITY · TASTE · TRADITION · </textPath>
+              </text>
+            </svg>
+            <span>HD</span>
+          </div>
+
+          <div class="vertical-note">СОЗДАНО ДЛЯ ВАШИХ МОМЕНТОВ</div>
+        </div>
+
+        <div class="hero-index">
+          <span>01</span>
+          <span class="index-line"></span>
+          <span>03</span>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Наши ценности">
+        <div class="marquee-track">
+          <span>ВКУС</span><i>✳</i><span>АТМОСФЕРА</span><i>✳</i>
+          <span>ГОСТЕПРИИМСТВО</span><i>✳</i><span>ВПЕЧАТЛЕНИЯ</span><i>✳</i>
+          <span>ВКУС</span><i>✳</i><span>АТМОСФЕРА</span><i>✳</i>
+          <span>ГОСТЕПРИИМСТВО</span><i>✳</i><span>ВПЕЧАТЛЕНИЯ</span><i>✳</i>
+        </div>
+      </section>
+
+      <section class="philosophy section-pad" id="philosophy">
+        <div class="section-kicker reveal">
+          <span>01</span>
+          <span>НАША ФИЛОСОФИЯ</span>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-heading reveal">
+            <h2>Хороший вкус<br>чувствуется <i>сразу.</i></h2>
+          </div>
+
+          <div class="philosophy-text reveal">
+            <p class="large-copy">
+              Есть места, куда приходят поужинать.
+              А есть места, куда хочется возвращаться.
+            </p>
+            <p>
+              Hanskiy Dvor — концепция ресторана, в которой
+              продуманные детали, уважение к продукту и настоящее
+              гостеприимство складываются в единое впечатление.
+            </p>
+            <a href="#menu" class="underlined-link">ПОЗНАКОМИТЬСЯ С МЕНЮ <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="philosophy-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85"
+            alt="Атмосфера современного ресторана"
+            loading="lazy"
+          >
+          <div class="image-label">
+            <span>ПРОСТРАНСТВО ДЛЯ ВСТРЕЧ</span>
+            <span>HD / 001</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu">
+        <div class="menu-heading">
+          <div>
+            <div class="section-kicker reveal">
+              <span>02</span><span>ИЗБРАННОЕ МЕНЮ</span>
+            </div>
+            <h2 class="reveal">Создано,<br>чтобы <i>удивлять.</i></h2>
+          </div>
+          <p class="menu-intro reveal">
+            Простота ингредиентов.<br>
+            Точность исполнения.<br>
+            Удовольствие в каждом моменте.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="dish-card reveal">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+                alt="Мясное блюдо"
+                loading="lazy"
+              >
+              <span class="dish-number">01</span>
+              <button class="dish-add" data-dish="Мясо на огне" data-price="1290" aria-label="Добавить мясо на огне в корзину">+</button>
+            </div>
+            <div class="dish-meta">
+              <div><h3>Мясо на огне</h3><p>ГОРЯЧЕЕ · АВТОРСКАЯ ПОДАЧА</p></div>
+              <span class="dish-price">1 290 ₽</span>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85"
+                alt="Свежий салат с овощами и зеленью"
+                loading="lazy"
+              >
+              <span class="dish-number">02</span>
+              <button class="dish-add" data-dish="Салат с зеленью" data-price="590" aria-label="Добавить салат в корзину">+</button>
+            </div>
+            <div class="dish-meta">
+              <div><h3>Салат с зеленью</h3><p>СВЕЖЕСТЬ · СЕЗОННЫЕ ПРОДУКТЫ</p></div>
+              <span class="dish-price">590 ₽</span>
+            </div>
+          </article>
+
+          <article class="dish-card reveal">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+                alt="Шоколадный десерт"
+                loading="lazy"
+              >
+              <span class="dish-number">03</span>
+              <button class="dish-add" data-dish="Десерт дня" data-price="450" aria-label="Добавить десерт в корзину">+</button>
+            </div>
+            <div class="dish-meta">
+              <div><h3>Десерт дня</h3><p>ДЕСЕРТЫ · СЛАДКОЕ ЗАВЕРШЕНИЕ</p></div>
+              <span class="dish-price">450 ₽</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="cart">
+          <div>
+            <span class="cart-label">ВАШ ВЫБОР</span>
+            <h3>Корзина <span id="cart-count">0</span></h3>
+            <p id="cart-items" aria-live="polite">Пока ничего не выбрано.</p>
+          </div>
+          <div class="cart-right">
+            <div><span>ИТОГО</span><strong id="cart-total">0 ₽</strong></div>
+            <button id="clear-cart" class="clear-cart">Очистить ↗</button>
+          </div>
+        </div>
+        <p class="demo-note">Демонстрационный интерфейс. Реальные заказы не отправляются.</p>
+      </section>
+
+      <section class="locations section-pad" id="locations">
+        <div class="section-kicker reveal">
+          <span>03</span><span>НАШИ ПРОСТРАНСТВА</span>
+        </div>
+
+        <div class="locations-grid">
+          <div class="locations-title reveal">
+            <h2>Выберите<br>своё <i>место.</i></h2>
+            <p>Каждая встреча начинается с правильного места.</p>
+          </div>
+
+          <div class="branch-list reveal">
+            <button class="branch-button active" data-branch="center">
+              <span class="branch-num">01</span>
+              <span class="branch-main"><strong>Центральный</strong><small>ГЛАВНЫЙ РЕСТОРАН</small></span>
+              <span class="branch-arrow">↗</span>
+            </button>
+            <button class="branch-button" data-branch="park">
+              <span class="branch-num">02</span>
+              <span class="branch-main"><strong>У парка</strong><small>ГОРОДСКОЕ ПРОСТРАНСТВО</small></span>
+              <span class="branch-arrow">↗</span>
+            </button>
+            <button class="branch-button" data-branch="avenue">
+              <span class="branch-num">03</span>
+              <span class="branch-main"><strong>Проспект</strong><small>ВСТРЕЧИ В ЦЕНТРЕ</small></span>
+              <span class="branch-arrow">↗</span>
+            </button>
+
+            <div class="branch-info">
+              <span class="cart-label">ИНФОРМАЦИЯ О ФИЛИАЛЕ</span>
+              <h3 id="branch-name">Центральный</h3>
+              <p id="branch-address">Адрес будет добавлен после согласования.</p>
+              <p id="branch-hours">График работы уточняется.</p>
+              <span class="branch-demo">ДЕМО-ДАННЫЕ</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="finale">
+        <div class="finale-image"></div>
+        <div class="finale-content reveal">
+          <span class="eyebrow">ВАШ СЛЕДУЮЩИЙ ОСОБЕННЫЙ ВЕЧЕР</span>
+          <h2>Повод быть<br><i>вместе.</i></h2>
+          <a href="#menu" class="finale-button magnetic">Открыть меню <span>↗</span></a>
+        </div>
+        <span class="finale-index">HANSKIY DVOR / 2024</span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#home">
+        <span class="brand-symbol">H<span>D</span></span>
+        <span class="brand-name">HANSKIY<br>DVOR</span>
+      </a>
+      <p>Концепт сайта для портфолио. Не официальный сайт ресторана.</p>
+      <a href="#home" class="back-top">НАВЕРХ ↑</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
